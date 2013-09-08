@@ -19,6 +19,11 @@ group :assets do
   gem 'uglifier'
 end
 
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
+
 gem 'jquery-rails'
 
 # Use unicorn as the web server
@@ -30,15 +35,11 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
-
-
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+
+
 
 
